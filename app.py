@@ -13,4 +13,10 @@ def show_header(text_title: str):
         st.caption("📘 Developed for: *Business Intelligence (Graduate Level)*")
         st.caption("Instructor: Edgar Avalos-Gauna (2026), Universidad Panamericana")
 
-show_header('My first dashboard using Streamlit')
+row1, row2 = st.rows([1,5])
+
+with row1:
+    show_header('My first dashboard using Streamlit')
+
+with row2:
+    st.markdown('**Hola** Mundo!!!')
